@@ -1,0 +1,145 @@
+html {
+   overflow: hidden;
+}
+
+.display {
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   top: 49.3%;
+   transform: translate(0%, -50%);
+   padding: 0;
+
+}
+
+.main {
+   position: absolute;
+   max-width: 100%;
+   left: 50%;
+   bottom: 50%;
+   transform: translate(-50%, 50%);
+   border-radius: inherit;
+   padding: inherit;
+   box-sizing: inherit;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+.window {
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.modal {
+   display: none;
+   padding-left: 5px;
+}
+
+#mask {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   z-index: 99;
+   background-color: rgba(0, 0, 0, 0.8);
+}
+
+#modal {
+   position: absolute;
+   max-width: 420px;
+   width: 95%;
+   height: 500px;
+   background-color: white;
+   top: 15%;
+   left: 50%;
+   transform: translate(-50%);
+
+   text-align: center;
+   z-index: 100;
+}
+
+.settings {
+   position: absolute;
+   transform: translate(-50%, 0%);
+   width: 150px;
+   height: 30px;
+   background-color: rgb(219, 196, 196);
+   font-weight: bold;
+   text-align: center;
+   z-index: 50;
+}
+
+#btn_settings {
+   position: absolute;
+   left: 50%;
+}
+
+#btn_start {
+   position: absolute;
+   bottom: 4%;
+}
+
+.input_text,
+p {
+   position: relative;
+   width: 450px;
+   height: 16px;
+   text-align: left;
+   margin: 4;
+   padding: 0;
+   font-size: 16px;
+}
+
+.input_box {
+   position: relative;
+   width: 36px;
+   height: 16px;
+   text-align: center;
+}
+
+#fullScreen,
+#blackWhite {
+   width: 14px;
+   height: 14px;
+}
+
+#btn_restart {
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   text-align: center;
+   background-color: red;
+   border: none;
+   left: 100%;
+   bottom: 0%;
+   transform: translate(-100%, 100%);
+   line-height: 45px;
+   z-index: 1000;
+}
+
+#btn_restart_rnd {
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   text-align: center;
+   background-color: red;
+   border: none;
+   border: none;
+   left: 100%;
+   bottom: 0%;
+   transform: translate(-100%, 100%);
+   line-height: 45px;
+   z-index: 1000;
+}
+
+button:hover {
+   /* курсор — палец */
+   cursor: pointer;
+   box-shadow: 4px 4px grey;
+}

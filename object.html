@@ -1,0 +1,82 @@
+﻿<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./public/css/style.css">
+   <title>Color boxes</title>
+</head>
+
+<body>
+   <div class=window>
+
+   <button id="btn_restart" onclick=window.location.reload()>Старт</button>
+   <!--       <button id="btn_restart_rnd" onclick="startRnd('.input_box', userData)">Старт</button> -->
+   <div>
+   </div>
+   <div class="modal" id="mask">
+      <div class="modal" id="modal">
+         <h3>Настройки</h3>
+
+         <div class='input_text'>
+            <p>Кол-во фигур:
+               <input class='input_box' value="200" min='1' max='3000'></p>
+            <p>Размер фигур, пикс:
+               <input class='input_box' value="50" min='1' max='600'> <a> на весь экран</a>
+               <input class='input_box' value="0" min='0' max=''>
+               <p>Цвета фигур</p>
+               <p> Красный:
+                  <input class='input_box' value="0" min='0' max='255'>
+                  <input class='input_box' value="100" min='0' max='255'></p>
+               <p> Зеленый:
+                  <input class='input_box' value="0" min='0' max='255'>
+                  <input class='input_box' value="100" min='0' max='255'></p>
+               <p> Синий:
+                  <input class='input_box' value="0" min='0' max='255'>
+                  <input class='input_box' value="100" min='0' max='255'></p>
+               <p>Углы, град:
+                  <input class='input_box' value="50" min='0' max='360'>
+                  <input class='input_box' value="50" min='0' max='360'>
+                  <input class='input_box' value="50" min='0' max='360'>
+                  <input class='input_box' value="50" min='0' max='360'></p>
+               <p>Задержка, мс:
+                  <input class='input_box' value="0" min='1' max='2000'></p>
+               <p>Обшее время:
+                  <input class='input_box' value="15" min='1' max='100'></p>
+               <p>Черно-белое
+                  <input class='input_box' value="0" min='0' max='1'>
+               </p>
+               <p>Поворот, град </p>
+               <p>Начальное
+                  <input class='input_box' value="0" min='1' max='360'>
+               </p>
+               <p>Периодическое
+                  <input class='input_box' value="1" min='1' max='360'>
+               </p>
+               <p>Смещение, проц </p>
+               <p>Начальное:
+                  <a>ось X <input class='input_box' value="0" min='-500' max='500'></a>
+                  <a>ось Y <input class='input_box' value="-50" min='-500' max='500'></a>
+               </p>
+               <p>Периодическое:
+                  <a>ось X <input class='input_box' value="-50" min='-500' max='500'></a>
+                  <a>ось Y <input class='input_box' value="50" min='-500' max='500'></a>
+               </p>
+               <p></p>
+               <button class="deafault" id="btn_default" type="button" onClick="setData('.input_box', userDefault)">по
+                  умолчанию</button>
+               <p></p>
+               <button class="deafault" id="btn_default" type="button"
+                  onClick="setRndData('.input_box', userData)">случайные</button>
+
+         </div>
+         <button class="settings" id="btn_start" type="button">Старт</button>
+
+      </div>
+   </div>
+   </div>
+   <div class='display'>
+
+   </div>
+   <script src="./public/script/object.js"></script>
+</body>
+
+</html>
